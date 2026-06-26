@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lksscope appVersion="v1.4.8">
+    <params>
+        <param name="linkType" value="0"/>
+        <param name="jClock" value="10000000"/>
+        <param name="uClock" value="1000000"/>
+        <param name="commPort" value="COM3"/>
+        <param name="commBaud" value="9600"/>
+        <param name="bleName" value=""/>
+        <param name="localIP" value=""/>
+        <param name="localPort" value=""/>
+        <param name="remoteIP" value=""/>
+        <param name="remotePort" value=""/>
+        <param name="rttAddr" value="20000000"/>
+        <param name="rttFreq" value="16000"/>
+        <param name="sampleInterval" value="10"/>
+        <param name="uiInterval" value="50"/>
+        <param name="maxPoint" value="100"/>
+        <param name="checkAxf" value="1"/>
+    </params>
+    <layouts>
+        <param name="geometry" value="AdnQywADAAD/////////9wAAB4AAAAP8AAABjwAAAJkAAAXwAAADYQAAAAACAAAAB4AAAAAAAAAAHQAAB38AAAP7"/>
+        <param name="state" value="AAAA/wAAAAD9AAAAAgAAAAAAAAGJAAADf/wCAAAAAvsAAAAIepdT41v8gioBAAAAUgAAAcAAAAAAAAAAAPwAAAIWAAABuwAAAAAA////+gAAAAACAAAAAvsAAAAIW/xRZVPYkc8BAAAAAP////8AAAAAAAAAAPsAAAAKgepbmk5JU9iRzwEAAAAA/////wAAAAAAAAAAAAAAAQAABfMAAAN//AIAAAAH+wAAAAwAUgBUAFRUfU7kiEwAAAAAAP////8AAAAAAAAAAPsAAAAKAFIAVABUZXBjbgAAAAAA/////wAAAAAAAAAA+wAAAAZbxFtYVmgAAAAAAP////8AAAAAAAAAAPsAAAAIj9CITGXlX9cAAAAAAP////8AAAAAAAAAAPwAAABOAAADhQAAAAAA/////AEAAAAC+wAAAAZm8n6/ADABAAAByQAABAcAAAAAAAAAAPsAAAAGZXBQPAAwAQAABdQAAAGsAAAAAAAAAAD7AAAACGVwY25mPnk6AQAAAFIAAAN/AAAAAAAAAAD7AAAACHU1Zzpjp1I2AAAAAAD/////AAAArwD///8AAAeAAAADbAAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAADAAAADgB0AG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAAAAAASAHQAbwBvAGwAQgBhAHIAXwAyAQAAAOb/////AAAAAAAAAAAAAAAWAHQAbwBvAGwAQgBhAHIATABvAGcAbwEAAAKt/////wAAAAAAAAAA"/>
+    </layouts>
+    <tabs curPage="0">
+        <tab checked="1" state="AAAA/wAAAAD9AAAAAgAAAAEAAAWJAAADO/wCAAAAA/sAAAAIj9CITGXlX9cAAAAAAP////8AAABtAP////sAAAAMAFIAVABUVH1O5IhMAAAAAAD/////AAAA5AD////8AAAAAAAAAzsAAAEjAP////wBAAAAAvsAAAAGZXBQPAAwAQAAAAAAAAFfAAAAagD////7AAAACgBSAFQAVGVwY24BAAABYwAABCYAAAB4AP///wAAAAMAAAWJAAACFPwBAAAAAfsAAAAGZvJ+vwAwAAAAAAAAAAWJAAAAagD///8AAAAAAAADOwAAAAQAAAAEAAAACAAAAAj8AAAAAA==" geometry="AdnQywADAAAAAAAAAAAAAAAABYgAAAM6AAAAAAAAAAD//////////wAAAAAAAAAAB4AAAAAAAAAAAAAABYgAAAM6" title="标签页0"/>
+    </tabs>
+    <forms>
+        <form type="0" title="Form"/>
+        <form type="1" lv-width="150,100,100,100,100,100,100,100,100,100" title="自定义变量"/>
+        <form type="13" lv-width="150,100,100,100,100,100,100,100,100,100" title="寄存器变量" chip=""/>
+        <form type="2" lv-width="178,100,100,100,320,100,100,204,100,100" title="代码变量" mapFile="./BiDCDC/BiDCDC.axf"/>
+        <form type="3" page="0" floating="0" title="运行日志" visible="0"/>
+        <form type="4" page="0" checkTStamp="0" floating="0" title="RTT命令行" syncFilePath="" sync2File="0" encode="GBK" visible="0"/>
+        <form type="5" page="0" floating="0" xCount="281821" trigType="0" trigValue="0" lineStyle="1" trigName="" xTag="0" title="RTT数据" max="500" autoRange="1" subMode="0" scatterStyle="1" visible="1" min="-500" scrollType="0">
+            <var name="rtt_channel1.data0" unit="" subPlot="0" color="#ff0000" formula="" desc="rtt_channel1.data0"/>
+            <var name="rtt_channel1.data1" unit="" subPlot="0" color="#00ff00" formula="" desc="rtt_channel1.data1"/>
+            <var name="rtt_channel1.data2" unit="" subPlot="0" color="#00ffff" formula="" desc="rtt_channel1.data2"/>
+            <var name="rtt_channel1.data3" unit="" subPlot="0" color="#ff00ff" formula="" desc="rtt_channel1.data3"/>
+            <var name="rtt_channel1.data4" unit="" subPlot="0" color="#aa55ff" formula="" desc="rtt_channel1.data4"/>
+            <var name="rtt_channel1.data5" unit="" subPlot="0" color="#00b42a" formula="" desc="rtt_channel1.data5"/>
+        </form>
+        <form type="12" page="-1" floating="0" lv-width="150,100,100,100,100" title="电机控制" visible="0">
+            <var upper="100" name="" lower="0" step="1" desc="速度设定"/>
+            <var upper="100" name="" lower="0" step="1" desc="电流设定"/>
+            <var upper="100" name="" lower="0" step="1" desc="功率设定"/>
+            <var upper="1" name="" lower="0" step="1" desc="电机启停"/>
+        </form>
+        <form type="6" page="-1" floating="0" title="Form" chip="0" visible="0"/>
+        <form type="7" page="0" floating="0" lv-width="225,150,100,100,100,60,100,100,120,100,100,139" title="数值0" visible="1" lv-hidden="">
+            <var interval="10" name="UI.CMD" unit="" showType="Unsigned" color="" addr="0x2000002c" formula="" subvar="0" desc="UI.CMD"/>
+            <var interval="10" name="UI.SetU" unit="" showType="Real" color="" addr="0x20000024" formula="" subvar="0" desc="UI.SetU"/>
+            <var interval="10" name="VoltagePI.Kp" unit="" showType="Real" color="" addr="0x20000048" formula="" subvar="0" desc="VoltagePI.Kp"/>
+            <var interval="10" name="VoltagePI.Ki" unit="" showType="Real" color="" addr="0x2000004c" formula="" subvar="0" desc="VoltagePI.Ki"/>
+            <var interval="10" name="CurrentPI.Kp" unit="" showType="Real" color="" addr="0x2000006c" formula="" subvar="0" desc="CurrentPI.Kp"/>
+            <var interval="10" name="CurrentPI.Ki" unit="" showType="Real" color="" addr="0x20000070" formula="" subvar="0" desc="CurrentPI.Ki"/>
+            <var interval="10" name="VoltagePI.Output" unit="" showType="Real" color="" addr="0x2000005c" formula="" subvar="0" desc="VoltagePI.Output"/>
+            <var interval="10" name="VoltagePI.Error" unit="" showType="Real" color="" addr="0x20000044" formula="" subvar="0" desc="VoltagePI.Error"/>
+            <var interval="10" name="VoltagePI.Sum" unit="" showType="Real" color="" addr="0x20000050" formula="" subvar="0" desc="VoltagePI.Sum"/>
+            <var interval="10" name="CurrentPI.Sum" unit="" showType="Real" color="" addr="0x20000074" formula="" subvar="0" desc="CurrentPI.Sum"/>
+            <var interval="10" name="CurrentPI.Output" unit="" showType="Real" color="" addr="0x20000080" formula="" subvar="0" desc="CurrentPI.Output"/>
+            <var interval="10" name="CurrentPI.Error" unit="" showType="Real" color="" addr="0x20000068" formula="" subvar="0" desc="CurrentPI.Error"/>
+            <var interval="10" name="CurrentPI.Reference" unit="" showType="Real" color="" addr="0x20000060" formula="" subvar="0" desc="CurrentPI.Reference"/>
+            <var interval="10" name="CurrentPI.FeedBack" unit="" showType="Real" color="" addr="0x20000064" formula="" subvar="0" desc="CurrentPI.FeedBack"/>
+            <var interval="10" name="UI.SetI" unit="" showType="Real" color="" addr="0x20000028" formula="" subvar="0" desc="UI.SetI"/>
+            <var interval="10" name="UI.RunMode" unit="" showType="Unsigned" color="" addr="0x20000021" formula="" subvar="0" desc="UI.RunMode"/>
+        </form>
+        <form refName="" scatterStyle="1" floating="0" trigName="" page="0" max="500" type="8" trigValue="0" xCount="1000" xTag="0" subMode="0" min="-500" filterType="1" refType="0" autoRange="1" scrollType="0" title="曲线0" refValue="0" lineStyle="1" visible="0" trigType="0"/>
+    </forms>
+</lksscope>

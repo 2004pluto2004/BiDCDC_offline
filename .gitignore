@@ -1,0 +1,69 @@
+# Local agent/tooling
+.agents/
+.tools/
+.codex/
+
+# OS / IDE
+.vscode/
+.idea/
+*.swp
+*.tmp
+Thumbs.db
+desktop.ini
+
+# Flutter / Dart generated files
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+pubspec.lock
+host_apps/bidcdc_control/bidcdc_control_v*_windows/
+host_apps/bidcdc_control/build_windows.log
+host_apps/bidcdc_control/windows/flutter/ephemeral/
+
+# Keep the packaged Windows release requested for upload.
+!host_apps/bidcdc_control/bidcdc_control_v0.3.1_windows.zip
+
+# Keil / ARM build intermediates
+*.o
+*.d
+*.axf
+*.map
+*.lst
+*.lnp
+*.dep
+*.htm
+*.build_log.htm
+*.iex
+*.crf
+*.elf
+*.bin
+
+# Keep the firmware image requested for upload.
+*.hex
+!BiDCDC(CV_CC)(1)/
+!BiDCDC(CV_CC)(1)/BiDCDC/
+!BiDCDC(CV_CC)(1)/BiDCDC/MDK-ARM/
+!BiDCDC(CV_CC)(1)/BiDCDC/MDK-ARM/BiDCDC/
+!BiDCDC(CV_CC)(1)/BiDCDC/MDK-ARM/BiDCDC/BiDCDC.hex
+
+# Keil local/user files
+*.uvguix.*
+*.uvgui.*
+JLinkLog.txt
+JLinkSettings.ini
+DebugConfig/
+
+# CubeMX/CMSIS packages not needed by this Keil target
+**/Drivers/CMSIS/DAP/
+**/Drivers/CMSIS/DSP/
+**/Drivers/CMSIS/NN/
+**/Drivers/CMSIS/Core_A/
+**/Drivers/CMSIS/Core/Template/
+**/Drivers/CMSIS/RTOS/
+**/Drivers/CMSIS/RTOS2/
+**/Drivers/CMSIS/Documentation/
+
+# Local archive snapshots
+BiDCDC(CV_CC)(1).zip
